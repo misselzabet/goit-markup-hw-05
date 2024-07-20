@@ -587,7 +587,7 @@
 
 
 
-          <div class="modal-filed-wrap">
+          <div class="modal-filed-wrap-comment">
             <label for="user-comment" > Comment </label>
             <textarea
               class="modal-comment"
@@ -595,25 +595,28 @@
               id="user-comment"
               placeholder="Text input"></textarea>
           </div>
-          <div class="modal-filed-wrap">
+          <div class="modal-filed-wrap-chek">
             <input
               type="checkbox"
-              name="terms"
-              id="terms"
-              value="accepted"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
               class="visually-hidden"
             />
-            <label for="terms" class="modal-check-text">
-              <span>
-                <svg>
+            <label for="user-privacy" class="modal-check-text"> accept the terms and conditions of the
+            <a href="" class="polit">Privacy Policy </a>
+                <span>
+
+              
+            <svg widht="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              accept the terms and conditions of the
-              <a href="" class="polit">Privacy Policy </a>
+              
+              
             </label>
           </div>
-          <button type="submit">Send</button>
+          <button type="submit" class="btn-send">Send</button>
          
         </form>
      

@@ -661,20 +661,27 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 
  .modal-filed-wrap {
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
  }
-
+.modal-filed-wrap {
+   
+   margin-bottom: 16px;
+}
  .modal-comment {
     Height: 120px;
     width: 100%;
     border-radius: 4px;
     Border: 1px solid rgba(46, 47, 66,0.4);
-    padding: 22px 24px;
+    padding: 8px 16px;
     background-color: transparent;
     outline: transparent;
     font-size: 12px;
     color: #2e2f42;
     resize: none;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: rgba(46, 47, 66, 0.4);
  }
 
 .modal-comment:focus{
@@ -689,25 +696,49 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 .modal-check-text{
    font-weight:  400; 
    font-size:  12px; 
-   Line-height: 1.16;
+   Line-height: 1.17;
+   letter-spacing: 0.04em;
    display: flex;
    align-items:center;
    gap: 8px;
+
 }
  
 .modal-check-text span {
-   
+   align-items: center;
+   justify-content: center;
+   fill: transparent;
+   display: inline-flex;
    Width: 16px; 
    Height: 16px;
-   border-radius: 2; 
+   border-radius: 2px; 
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     Border:1px solid rgba(46, 47, 66, 0.4) ;
 }
-.modal-check:checked + .modal-check-text span  {
-   
-   background-color:#404BBF;
-   border: none;
+.modal-filed-wrap-chek{
+   margin-bottom: 24px;
 }
+
+
+/* .modal-check:checked + .modal-check-text span  { background-color:#404BBF; 
+   border: none;}
+
+        */
+.visually-hidden:checked + .visually-hidden span {
+background-color: #404BBF;
+border: none;
+              }
 .polit{
    color: #4D5AE5;
    text-decoration: underline;
 }
+
+.btn-send{
+   font-weight: 500;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   color: #4D5AE5;
+   border: none;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+    
