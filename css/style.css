@@ -482,9 +482,10 @@ margin-right: 80px;
    color: #F4F4FD;
    max-width: 264px;
  }
- .footer-label {
+ .footer-subscribe {
    color: #ffffff;
-   display: flex;
+
+   letter-spacing: 0.02em;
 
  }
 .footer-emeil {
