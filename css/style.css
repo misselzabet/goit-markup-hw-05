@@ -484,9 +484,12 @@ margin-right: 80px;
  }
  .footer-subscribe {
    color: #ffffff;
-
    letter-spacing: 0.02em;
-
+   margin-bottom: 16px;
+ }
+ .footer-form{
+   display: flex;
+   gap: 24px;
  }
 .footer-emeil {
    Width: 264px;
