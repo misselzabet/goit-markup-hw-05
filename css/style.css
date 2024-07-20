@@ -503,6 +503,8 @@ margin-right: 80px;
 font-size: 12px;
    line-height: 2;
    font-weight: 400;
+   letter-spacing: 0.04em;
+   box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
 }
 .footer-emeil::placeholder{
    color: #ffffff;
@@ -512,21 +514,25 @@ font-size: 12px;
 }
 .footer-btn {
 
-width: 165px;
+min-width: 165px;
  Height:40px;   
  border-Radius: 4px;
   padding: 8px 24px;
-
+display: flex;
    Gap: 16px;
  background-color: #4D5AE5;
  align-items: center;
-
+justify-content: center;
  color: #ffffff;
-
+font-weight: 500;
+cursor: pointer;
+letter-spacing: 0.04em;
+border: none;
 }
 .footer-icon {
    position: absolute;
    fill: #ffffff;
+   margin-left: 16px;
 }
  /* modal */
  .modal-overlay {
