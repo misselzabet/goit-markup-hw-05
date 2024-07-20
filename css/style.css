@@ -550,7 +550,7 @@ opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-ransition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
  .modal {
@@ -594,10 +594,11 @@ ransition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-be
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0px;
     cursor: pointer;
-   background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .modal-butt:hover, .modal-butt:focus{
+   border: none;
    background-color: #404bbf;
  }
 
@@ -633,6 +634,11 @@ ransition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-be
     fill: #4D5AE5;
  }
 
+ .modal-label{
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.04em;
+ }
  .modal-icon {
     fill: transparent;
     stroke: #4D5AE5;
