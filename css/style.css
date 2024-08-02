@@ -69,18 +69,21 @@ border-bottom: 1px solid #e7e9fc;
   gap: 40px;
   
 }
-
+.webstudio {
+   display: flex;
+  align-items: center; 
+}
+ span {
+    color: #2e2f42;
+ }
 /* delete 
 .logo{
    display: flex;
    flex-direction: row;
    border: 2px #2E2F42 solid;
 }
-.webstudio {
-  display: flex;
-  align-items: center;
-}
- span{color: #2e2f42; }
+
+
 
 .first-container {
    display: flex;
@@ -99,6 +102,7 @@ border-bottom: 1px solid #e7e9fc;
  }
  .link.current{
    position: relative;
+   color: #404BBF;
  }
   .link.current::before{
    content: "";
@@ -114,10 +118,10 @@ border-bottom: 1px solid #e7e9fc;
     color: #404BBF;
  }
  .link:active{
-   background-color: #404BBF;
+   color: #404BBF;
    text-decoration: underline;
  }
- .link::after{
+ .link.link.current::after{
    width:100%;
    bottom: -1px;
    content:"";
@@ -386,7 +390,7 @@ gap: 24px;
 }
 
 .card:hover{
-   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
+   
 }
 .card {
    position: relative;
@@ -444,7 +448,7 @@ footer .container {
  
  .last-line-logo{
    margin-right: 120px;
-  margin-right: 56px;
+
  }
  .second-link-logo {
    text-decoration: none;
@@ -460,7 +464,7 @@ footer .container {
    display: inline-block;
  }
  .last-line-social-media {
-margin-right: 80px;
+margin-right: auto;
  }
 .social-media-title{
    color: #ffffff;
@@ -500,7 +504,7 @@ margin-right: 80px;
    letter-spacing: 0.02em;
    margin-bottom: 16px;
  }
- .footer-form{
+ .footer-form-subscribe{
    display: flex;
    gap: 24px;
  }
@@ -512,7 +516,7 @@ margin-right: 80px;
     Border: 1px solid #FFFFFF;
     color: #ffffff;
     padding-left: 16px;
-    margin-right: 24px;
+   
 font-size: 12px;
    line-height: 2;
    font-weight: 400;
@@ -532,7 +536,7 @@ min-width: 165px;
  border-Radius: 4px;
   padding: 8px 24px;
 display: flex;
-   Gap: 16px;
+   
  background-color: #4D5AE5;
  align-items: center;
 justify-content: center;
@@ -544,7 +548,7 @@ border: none;
 line-height: 1.5;
 }
 .footer-icon {
-   position: absolute;
+   
    fill: #ffffff;
    margin-left: 16px;
 }
@@ -552,13 +556,13 @@ line-height: 1.5;
  .modal-overlay {
     background-color: rgba(46, 47, 66, 0.4);
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    visibility: hidden;
-opacity: 0;
-   pointer-events: none;
+   visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -576,7 +580,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
    padding: 72px 24px 24px 24px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    
+    transform: translate(-50%, -50%);
     min-width: 408px;
     min-height: 584px;
     overflow-y: auto;
@@ -660,6 +664,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
    color: #8e8f99;
    display: block;
    margin-bottom: 4px;
+   font-weight: 400;
  }
  .modal-icon-container{
    position: relative;
@@ -683,7 +688,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
     margin-bottom: 8px;
  }
 .modal-filed-wrap-comment {
-   
+   font-weight: 400;
    margin-bottom: 16px;
 }
  .modal-comment {
@@ -769,6 +774,9 @@ fill: #F4F4FD;
    border: none;
    cursor: pointer;
    color: #ffffff;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 4px ;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     
